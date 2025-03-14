@@ -1,21 +1,5 @@
 *.class
 /README.md
-/src/main/resources/browserstack
-/src/main/resources/L10N
-/src/main/resources/mappers
-/src/main/java/com/solvd/carina-testing/api
-/src/main/java/com/solvd/carina-testing/db
-/src/main/java/com/solvd/carina-testing/gui
-/src/main/java/com/solvd/carina-testing/mobile
-/src/main/java/com/solvd/carina-testing/soap
-/src/main/java/com/solvd/carina-testing/utils
-/src/main/java/com/solvd/carina-testing/websocket
-/src/test/java/com/solvd/carina-testing/regression
-/src/test/resources/api
-/src/test/resources/data_source
-/src/test/resources/features
-/src/test/resources/files
-/src/test/resources/testng_suite
 
 # Package Files #
 *.jar
