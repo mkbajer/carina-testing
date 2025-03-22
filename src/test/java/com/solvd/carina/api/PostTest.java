@@ -10,6 +10,5 @@ public class PostTest implements IAbstractTest {
         PostRepo postRepo = new PostRepo();
         postRepo.callAPIExpectSuccess();
         postRepo.validateResponse();
-
     }
 }

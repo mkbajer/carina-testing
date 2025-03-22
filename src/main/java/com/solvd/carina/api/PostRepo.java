@@ -9,14 +9,13 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/user/repos", methodType = HttpMethodType.POST)
+@Endpoint(url = "${DEMO.url}/user/repos", methodType = HttpMethodType.POST)
 @ResponseTemplatePath(path = "post_try/rp.json")
 @RequestTemplatePath(path = "post_try/rq.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.CREATED_201)
 public class PostRepo extends  AbstractApiMethodV2 {
     public PostRepo() {
-        replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
+        replaceUrlPlaceholder("DEMO.url", Configuration.getRequired("api_url"));
         setHeader("Authorization", "Bearer" + Configuration.getRequired("user_token"));
-
     }
 }
