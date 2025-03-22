@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class PostTest implements IAbstractTest {
 
-    @Test(description = "creating new Repo", priority =2)
+    @Test(description = "creating new Repo", priority = 1)
     public void postTest() {
         PostRepo postRepo = new PostRepo();
         postRepo.callAPIExpectSuccess();
