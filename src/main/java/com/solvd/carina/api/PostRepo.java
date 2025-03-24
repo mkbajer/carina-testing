@@ -13,8 +13,8 @@ import com.zebrunner.carina.utils.config.Configuration;
 @ResponseTemplatePath(path = "post_try/rs.json")
 @RequestTemplatePath(path = "post_try/rq.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.CREATED_201)
-public class PostRepo extends  AbstractApiMethodV2 {
-    public PostRepo() {
+public class PostRepo extends AbstractApiMethodV2 {
+    public PostRepo(String uniqueRepoName) {
         replaceUrlPlaceholder("DEMO.url", Configuration.getRequired("api_url"));
         setHeader("Authorization", "Bearer " + Configuration.getRequired("user_token"));
     }

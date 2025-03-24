@@ -2,9 +2,7 @@
 <suite name="GitHub API Test Suite">
     <test name="API">
         <classes>
-            <class name="com.solvd.carina.api.GetTest"/>
-            <class name="com.solvd.carina.api.PostTest"/>
-            <class name="com.solvd.carina.api.DeleteTest"/>
+            <class name="com.solvd.carina.api.APITest"/>
         </classes>
     </test>
 </suite>
