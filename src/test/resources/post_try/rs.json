@@ -1,6 +1,6 @@
 {
-  "id": "${id}",
-  "node_id": "${node_id}",
+  "id": "${id!}",
+  "node_id": "${node_id!}",
   "name": "todelete",
   "full_name": "mkbajer/todelete",
   "private": false,
