@@ -15,8 +15,8 @@ public class DeleteRepo extends AbstractApiMethodV2 {
 
     public DeleteRepo(String owner, String repo) {
         replaceUrlPlaceholder("DEMO.url", Configuration.getRequired("api_url"));
-        replaceUrlPlaceholder("owner",owner);
-        replaceUrlPlaceholder("repo",repo);
+        replaceUrlPlaceholder("owner", owner);
+        replaceUrlPlaceholder("repo", repo);
         setHeader("Authorization", "Bearer " + Configuration.getRequired("user_token"));
         // could use just the PAT -> personal authentication token from Github
     }
