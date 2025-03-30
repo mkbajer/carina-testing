@@ -4,7 +4,6 @@ import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-
 public class Home extends HomePageBase {
 
     @FindBy(id = "nav-hamburger-menu")

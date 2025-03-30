@@ -18,11 +18,9 @@ public class ProductDetails extends AbstractPage {
 
     }
 
-
     public String getTitle() {
         return productTitle.getText().trim();
     }
-
 
     public String getPrice() {
         return productPrice.isElementPresent() ? productPrice.getText().trim() : null;

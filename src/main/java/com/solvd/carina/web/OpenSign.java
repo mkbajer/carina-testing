@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class OpenSign extends AbstractPage {
 
-
     @FindBy(id = "ap_email")
     private ExtendedWebElement emailInput;
 
@@ -30,9 +29,7 @@ public class OpenSign extends AbstractPage {
         setUiLoadedMarker(emailInput);
     }
 
-
     //Perform login with given username (email/phone) and password.
-
     public void login(String username, String password) {
         emailInput.type(username);
         continueButton.click();
@@ -40,4 +37,3 @@ public class OpenSign extends AbstractPage {
         signInButton.click();
     }
 }
-

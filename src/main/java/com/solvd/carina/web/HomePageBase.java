@@ -16,6 +16,4 @@ public abstract class HomePageBase extends AbstractPage {
 
     // Returns the Hamburger Menu
     public abstract HamburgerMenu getHamburgerMenu();
-
-
 }
