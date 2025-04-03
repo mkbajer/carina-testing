@@ -20,6 +20,6 @@ public class Home extends HomePageBase {
 
     public HamburgerMenu openHamburgerMenu() {
         hamburgerMenuButton.click();
-        return new HamburgerMenu(driver);
+        return new HamburgerMenu(getDriver());
     }
 }
